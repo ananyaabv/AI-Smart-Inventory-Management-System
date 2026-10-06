@@ -1,0 +1,7 @@
+{
+  "name": "SmartStock",
+  "description": "Enterprise Store Inventory Management System featuring visual shelf stock counting, 10,000+ item catalog, live stock reconciliation, category stock unit variance analysis, and comprehensive audit trails in Indian Rupees (₹).",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
