@@ -18,7 +18,7 @@ import {
 import { Navbar } from './components/Navbar';
 import { DetectionView } from './components/DetectionView';
 import { InventoryView } from './components/InventoryView';
-import { DashboardView } from './components/DashboardView';
+import { SalesPredictionView } from './components/SalesPredictionView';
 import { AlertsView } from './components/AlertsView';
 import { ReportsView } from './components/ReportsView';
 import { SqliteModal } from './components/SqliteModal';
@@ -348,31 +348,31 @@ export default function App() {
           />
         </section>
 
-        {/* Section Divider with Purple Theme Accent */}
-        <div className="w-full h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent my-16 sm:my-20" />
+        {/* Section Divider with Indigo/Cyan Theme Accent */}
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent my-16 sm:my-20" />
 
-        {/* Section: Analytics Dashboard & Stock Unit Difference */}
+        {/* Section: Customer Sales Prediction & Product Organisation */}
         <section id="analytics" className="scroll-mt-24 space-y-6">
           <div className="space-y-2">
             <div className="flex flex-wrap items-center justify-between gap-3">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-purple-500/10 text-purple-400 border border-purple-500/20">
-                <BarChart3 className="w-3.5 h-3.5" />
-                <span>Financial Intelligence & Variance</span>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Sales Prediction & Product Organisation</span>
               </div>
-              <span className="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">
-                <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
-                Stock Difference Analysis
+              <span className="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse" />
+                Sales Percentage & Planogram Layout Engine Active
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
-              Store Financial Performance & Stock Differences
+              Customer Sales Prediction & Product Organisation
             </h2>
             <p className="text-sm sm:text-base text-slate-400 max-w-3xl">
-              Breakdown of stock unit differences by product category (Current vs Target Units), valuation analytics in ₹, turnover metrics, and audit trail of 100+ stock movement transactions.
+              Real-time sales percentage analytics and planogram product organisation: identifies stock with high consumption (fast-selling front-runners) and stock with least consumption (slow movers), with customer purchase probabilities and shelf space allocation.
             </p>
           </div>
 
-          <DashboardView
+          <SalesPredictionView
             products={products}
             transactions={transactions}
           />

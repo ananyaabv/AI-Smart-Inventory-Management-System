@@ -6,6 +6,7 @@ import {
   Camera,
   Layers,
   BarChart3,
+  TrendingUp,
   AlertTriangle,
   FileText,
   Database,
@@ -39,7 +40,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   const navItems = [
     { id: 'detect', label: 'Visual Shelf Scanner', icon: Camera, color: 'text-cyan-400', activeBg: 'bg-cyan-600' },
     { id: 'inventory', label: 'Master Store Catalog', icon: Layers, badgeText: '10,000 SKUs', color: 'text-emerald-400', activeBg: 'bg-emerald-600' },
-    { id: 'analytics', label: 'Store Financials & Analytics', icon: BarChart3, color: 'text-purple-400', activeBg: 'bg-purple-600' },
+    { id: 'analytics', label: 'Sales Prediction & Product Organisation', icon: TrendingUp, color: 'text-indigo-400', activeBg: 'bg-indigo-600' },
     {
       id: 'alerts',
       label: 'Stock Replenishment Alerts',
